@@ -6,7 +6,10 @@
 
 # Running
 - ng serve
-- npm run server (local api)
+- npm run server (local api :3000)
+
+# api
+- get http://localhost:3000/candidates
 
 ------------------------------
 # Angular8Candidate
