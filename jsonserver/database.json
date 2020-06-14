@@ -1,1 +1,62 @@
-{"candidates":[{"id":1,"name":"Mozell Breitenberg","username":"Wade_Barton","phone":"170.366.8483 x7371","role":"Central Communications Director"},{"id":2,"name":"Dr. Jarod Blick","username":"Polly42","phone":"1-266-504-8157 x8499","role":"Central Operations Orchestrator"},{"id":3,"name":"Magdalena Gerhold","username":"Erick.Parisian","phone":"1-703-957-8471 x86462","role":"International Paradigm Strategist"},{"id":4,"name":"Mr. Anais Rolfson","username":"Andreanne15","phone":"143-876-6209","role":"Internal Operations Administrator"},{"id":5,"name":"Dock Borer Sr.","username":"Savanah_Green","phone":"(467) 687-4082","role":"International Marketing Agent"},{"id":6,"name":"Selena Donnelly","username":"Callie_Greenholt32","phone":"(772) 949-7493 x047","role":"Chief Program Officer"},{"id":7,"name":"Rose Hackett","username":"Brenden.Conn","phone":"406-553-1339 x12115","role":"Direct Interactions Designer"},{"id":8,"name":"Eleanore Denesik","username":"Queen_Wintheiser","phone":"(079) 413-9917 x396","role":"Direct Marketing Technician"},{"id":9,"name":"Vincenza MacGyver","username":"Jovan46","phone":"695-716-4223 x58077","role":"Future Configuration Executive"},{"id":10,"name":"Dr. Anais Hayes","username":"Douglas70","phone":"043.419.2346 x758","role":"Central Response Analyst"},{"id":11,"name":"Meagan Schinner","username":"Tremaine.Balistreri","phone":"1-887-464-0826","role":"Dynamic Intranet Agent"},{"id":12,"name":"Rollin Lehner","username":"Lee35","phone":"326-005-4004 x8120","role":"District Research Technician"},{"id":13,"name":"Abbey Hickle","username":"Lulu25","phone":"1-772-946-4475 x0482","role":"Forward Factors Representative"},{"id":14,"name":"Lavinia Nienow","username":"Harley94","phone":"1-784-645-7811","role":"Regional Paradigm Strategist"},{"id":15,"name":"Pink Frami","username":"Dalton.Hickle","phone":"353.411.5603 x5771","role":"International Directives Associate"},{"id":16,"name":"Israel Abshire","username":"Alf45","phone":"760.676.3523 x1880","role":"Dynamic Assurance Designer"},{"id":17,"name":"Bernadette Shields","username":"Kendrick_Mertz","phone":"(389) 246-6835 x8691","role":"Customer Usability Agent"},{"id":18,"name":"Laurel Olson","username":"Lucas7","phone":"412.604.0763 x496","role":"Product Division Designer"},{"id":19,"name":"Nikolas Smith","username":"Darlene.Hoeger27","phone":"503.375.0775","role":"Dynamic Mobility Technician"},{"id":20,"name":"Conrad Marks","username":"Edna_Kihn","phone":"1-288-255-9286","role":"Internal Branding Director"}]}
+{
+  "candidates": [
+    {
+      "id": 1,
+      "name": "Daisy Schaden",
+      "username": "Odessa7",
+      "phone": "1-253-438-0219 x114",
+      "role": "Principal Brand Technician"
+    },
+    {
+      "id": 2,
+      "name": "Alexandro Klocko",
+      "username": "Valentine.Cummerata96",
+      "phone": "711-832-3089 x5548",
+      "role": "Dynamic Markets Administrator"
+    },
+    {
+      "id": 3,
+      "name": "Amos Roberts",
+      "username": "Marlon.Frami",
+      "phone": "290.286.3028",
+      "role": "Investor Research Planner"
+    },
+    {
+      "id": 4,
+      "name": "Will Abernathy",
+      "username": "Chase.Erdman2",
+      "phone": "116.121.7079 x445",
+      "role": "Dynamic Metrics Director"
+    },
+    {
+      "id": 5,
+      "name": "Martine Kirlin",
+      "username": "Adonis.Swift",
+      "phone": "(320) 560-0656 x98207",
+      "role": "Product Security Agent"
+    },
+    {
+      "id": 6,
+      "name": "Alison Herman",
+      "username": "Frederique_Sawayn",
+      "phone": "566.888.1609",
+      "role": "Legacy Communications Planner"
+    }
+  ],
+  "posts": [
+    {
+      "id": 3,
+      "username": "Admin",
+      "title": "Message to candidate",
+      "content": "Est eligendi blanditiis non voluptatum doloribus. Sit assumenda et magnam sed occaecati ut. Ut laudantium molestias est occaecati. Qui ratione porro dignissimos ea voluptas quas dignissimos. Officiis pariatur recusandae laborum esse sequi iusto.",
+      "datetime": "2020-06-12T13:59:07.860Z"
+    },
+    {
+      "id": 4,
+      "username": "Admin",
+      "title": "Message to candidate",
+      "content": "In illo cumque sit vero sapiente. Aliquam quaerat esse qui aut aut aliquam. Dolorum hic sed et nihil et provident sint.",
+      "datetime": "2020-06-12T13:59:07.860Z"
+    }
+  ]
+}

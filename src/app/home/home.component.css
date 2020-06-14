@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+mat-card {
+  grid-column-start: 2;
+  margin-top: 10px;
+}
+
+.example-card:hover {
+  box-shadow: 5px 5px #8888882f;
+}
+
+.example-card {
+  max-width: 100%;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.datetime {
+  text-align: right;
+}

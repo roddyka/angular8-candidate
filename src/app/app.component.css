@@ -1,0 +1,11 @@
+mat-toolbar {
+  background-color: white;
+}
+
+mat-toolbar > img {
+  width: 200px;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}

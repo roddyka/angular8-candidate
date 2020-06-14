@@ -1,1 +1,50 @@
-<p>home works!</p>
+<div style="padding: 13px;" class="container">
+  <mat-card>
+    <form [formGroup]="angForm">
+      <h3>Write your comment!</h3>
+      <textarea
+        name="content"
+        placeholder="Message..."
+        formControlName="content"
+        #content
+        rows="5"
+        cols="80"
+        [mention]="candidates"
+        [mentionConfig]="mentionConfig"
+      ></textarea>
+      <br />
+      <button
+        mat-button
+        type="submit"
+        value="submit"
+        (click)="onClickSubmit(content.value)"
+      >
+        Send
+      </button>
+    </form>
+  </mat-card>
+
+  <mat-spinner *ngIf="posts.length === 0"></mat-spinner>
+
+  <mat-card class="example-card" *ngFor="let post of posts">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ post.username }}</mat-card-title>
+      <mat-card-subtitle>{{ post.title }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        {{ post.content }}
+      </p>
+      <p class="datetime">{{ post.datetime }}</p>
+    </mat-card-content>
+    <mat-card-actions fxLayout="row">
+      <div fxFlex></div>
+      <div fxLayoutAlign="right">
+        <button mat-button>Edit</button>
+        <button mat-button (click)="deleteItem(post)">Delete</button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,1 +1,18 @@
-<p>admin works!</p>
+<div style="padding: 13px;">
+  <mat-spinner *ngIf="candidates.length === 0"></mat-spinner>
+
+  <mat-card *ngFor="let candidate of candidates" style="margin-top: 10px;">
+    <mat-card-header>
+      <mat-card-title>{{ candidate.name }}</mat-card-title>
+      <mat-card-subtitle>{{ candidate.phone }} </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{ candidate.role }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>{{ candidate.username }}</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
