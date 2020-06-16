@@ -11,6 +11,7 @@
         cols="80"
         [mention]="candidates"
         [mentionConfig]="mentionConfig"
+        [(ngModel)]="createPosts.content"
       ></textarea>
       <br />
       <button
@@ -24,9 +25,11 @@
     </form>
   </mat-card>
 
-  <mat-spinner *ngIf="posts.length === 0"></mat-spinner>
+  <div class="nomessage">
+    <p *ngIf="posts.length === 0">Write your first message...</p>
+  </div>
 
-  <mat-card class="example-card" *ngFor="let post of posts">
+  <mat-card class="example-card" *ngFor="let post of posts; let i = index">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{ post.username }}</mat-card-title>
@@ -34,15 +37,15 @@
     </mat-card-header>
 
     <mat-card-content>
-      <p>
-        {{ post.content }}
-      </p>
-      <p class="datetime">{{ post.datetime }}</p>
+      <p (click)="click($event)" [innerHTML]="post.content | safe: 'html'"></p>
+      <p class="datetime">{{ post.date | date: "fullDate" }}</p>
     </mat-card-content>
     <mat-card-actions fxLayout="row">
       <div fxFlex></div>
       <div fxLayoutAlign="right">
-        <button mat-button>Edit</button>
+        <button mat-button (click)="updatePosts(post.id, post.content, i)">
+          Edit
+        </button>
         <button mat-button (click)="deleteItem(post)">Delete</button>
       </div>
     </mat-card-actions>

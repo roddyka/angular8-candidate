@@ -20,7 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MentionModule } from 'angular-mentions';
-
+import { MatTableModule } from '@angular/material/table';
+import { SafePipe } from './safe.pipe';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -28,7 +29,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AdminComponent],
+  declarations: [AppComponent, HomeComponent, AdminComponent, SafePipe],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
@@ -45,6 +46,7 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     MentionModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

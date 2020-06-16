@@ -9,3 +9,8 @@ mat-toolbar > img {
 mat-grid-tile {
   background: lightblue;
 }
+
+.menuItem {
+  width: 100%;
+  text-align: right;
+}

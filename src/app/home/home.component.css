@@ -28,3 +28,18 @@ mat-card {
 .datetime {
   text-align: right;
 }
+
+.nomessage {
+  grid-column-start: 2;
+  margin-top: 10px;
+}
+
+employee {
+  cursor: pointer;
+  color: pink;
+  font-size: 20px;
+}
+
+.infoUser {
+  text-align: left;
+}
