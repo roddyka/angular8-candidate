@@ -1,3 +1,17 @@
+# Development
+- Angular Material
+- Routing
+- Local Storage (Local API and Database.json)
+- Faker.js (To take randon candidates)
+
+# Running
+- ng serve
+- npm run server (local api :3000)
+
+# api
+- get http://localhost:3000/candidates
+
+------------------------------
 # Angular8Candidate
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
