@@ -3,14 +3,33 @@
 - Routing
 - Local Storage (Local API and Database.json)
 - Faker.js (To take randon candidates)
+- Angular-mentions
 
 # Running
-- ng serve
-- npm run server (local api :3000)
+- npm run server (to run the database)
+- ng serve (to run the aplication)
 
 # api
 - get http://localhost:3000/candidates
+...
 
+Requirements for path “/admin”:
+(x) 1) User can add, edit and remove employees;
+(x) 2) All fields (ID, username, phone, role, name) are required;
+(x) 3) ID and Phone are unique;
+(x) 4) ID cannot be changed but all the other values can;
+Requirements for path “/” for posts at “/”:
+(x) 1) Users can add posts on a timeline;
+(x) 2) By typing ‘@’ inside a post an autocomplete should pop up to help user select an
+employee;
+( ) 3) When changing the username of an employee, it should reflect in already created
+posts. A possible solution is saving the text of the post as <employee id=”1”
+field=”username”></employee> instead of @mathilde, or #992312312; 
+
+I create a component called <app-employee [candidate]="id"> to change the user name when the admin change it, but i trying to aply it when i call the content on my API get call.
+
+(x) All data is saved and retrieved by services;
+(x) Although you can use external libraries, you managed to get it to work by yourself.
 ------------------------------
 # Angular8Candidate
 
