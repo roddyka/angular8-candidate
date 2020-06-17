@@ -21,6 +21,10 @@ export class ApiService {
     return this.httpClient.get(this.SERVER_URL + '/candidates');
   }
 
+  getCandidate(id) {
+    return this.httpClient.get(`${this.SERVER_URL}/candidates/${id}`);
+  }
+
   deleteCandidate(id) {
     return this.httpClient.delete(`${this.SERVER_URL}/candidates/${id}`);
   }

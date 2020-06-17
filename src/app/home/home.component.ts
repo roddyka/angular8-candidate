@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ElementRef,
+  ViewContainerRef,
+  ComponentFactoryResolver,
+  AfterViewInit,
+  ViewChild,
+} from '@angular/core';
 import { ApiService } from '../api.service';
 import { FormControl } from '@angular/forms';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { DomSanitizer } from '@angular/platform-browser';
+import { EmployeeComponent } from '../employee/employee.component';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   createPosts = {
     id: '',
     username: 'ADMIN',
@@ -27,7 +37,8 @@ export class HomeComponent implements OnInit {
   constructor(
     private apiService: ApiService,
     private fb: FormBuilder,
-    public sanitizer: DomSanitizer
+    public sanitizer: DomSanitizer,
+    public elementRef: ElementRef
   ) {
     this.createForm();
   }
@@ -38,15 +49,13 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.apiService.getPosts().subscribe((data: any[]) => {
-      console.log(data);
-      this.posts = data;
+    this.apiService.getPosts().subscribe((dataPosts: any[]) => {
+      this.posts = dataPosts;
     });
 
     this.apiService.get().subscribe((data: any[]) => {
-      console.log(data);
       this.candidates = data;
-      console.log(this.candidates);
+
       this.mentionConfig = {
         mentions: [
           {
@@ -68,19 +77,28 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  ngAfterViewInit() {}
   formatter(selection): string {
     return (
-      "<employee id='" +
+      "<app-employee [candidate]='" +
+      selection.id +
+      "' id='" +
       selection.id +
       "'>@" +
       selection.username +
-      '</employee>'
+      '</app-employee>'
     );
   }
 
   formatterPhone(selection): string {
     return (
-      "<employee id='" + selection.id + "'>#" + selection.phone + '</employee>'
+      "<app-employee [candidate]='" +
+      selection.id +
+      "' id='" +
+      selection.id +
+      "'>#" +
+      selection.phone +
+      '</app-employee>'
     );
   }
 

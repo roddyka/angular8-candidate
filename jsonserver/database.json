@@ -2,11 +2,11 @@
   "candidates": [
     {
       "id": 1,
-      "username": "roddykann",
+      "username": "roddykan",
       "name": "RODRIGO DE CARVALHO ANTUNES",
       "role": "Front-End Developer",
       "phone": "9266798358",
-      "date": 1592328428424
+      "date": 1592355925372
     }
   ],
   "posts": [
@@ -14,15 +14,8 @@
       "id": 1,
       "username": "ADMIN",
       "title": "Message to Candidate",
-      "content": "Hey bro!!! <employee id='1'>@roddyka</employee>",
-      "date": 1592249954453
-    },
-    {
-      "id": 2,
-      "username": "ADMIN",
-      "title": "Message to Candidate",
-      "content": "Heyyyy <employee id='1'>@roddyka</employee> <employee id='1'>#926679835</employee>",
-      "date": 1592250275688
+      "content": "<app-employee [candidate]='1' id='1'>@roddykanna</app-employee> aeeee",
+      "date": 1592355913593
     }
   ]
 }

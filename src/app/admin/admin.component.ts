@@ -149,6 +149,7 @@ export class AdminComponent implements OnInit {
   }
 
   updateCandidate(id, data, index) {
+    this.showform = true;
     this.indexPost = index;
     this.editCandidateId = id;
     this.createCandidates.name = data.name;

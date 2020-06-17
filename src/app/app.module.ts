@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MentionModule } from 'angular-mentions';
 import { MatTableModule } from '@angular/material/table';
 import { SafePipe } from './safe.pipe';
+import { EmployeeComponent } from './employee/employee.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -29,7 +30,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AdminComponent, SafePipe],
+  declarations: [AppComponent, HomeComponent, AdminComponent, SafePipe, EmployeeComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
